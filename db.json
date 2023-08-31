@@ -1,0 +1,63 @@
+{
+  "users": [
+    {
+      "name": "Alejo",
+      "surname": "Lara",
+      "email": "alejoLara@email.com",
+      "password": "123456",
+      "token": "Jj9rlIR4ve",
+      "role": "ADMINISTRADOR",
+      "id": 1
+    },
+    {
+      "name": "test",
+      "surname": "test",
+      "email": "test@mail.com",
+      "password": "123456",
+      "role": "USUARIO",
+      "token": "Jj9rlIR4va",
+      "id": 2
+    }
+  ],
+  "alumnos": [
+    {
+      "nombre": "pedro",
+      "email": "pedro@mail.com",
+      "password": "123456",
+      "apellido": "lopez",
+      "dni": "123",
+      "id": 1
+    },
+    {
+      "nombre": "alumno",
+      "email": "alumno@mail.com",
+      "password": "alumno",
+      "apellido": "alumno",
+      "dni": "321",
+      "id": 2
+    }
+  ],
+  "cursos": [
+    {
+      "nombre": "js",
+      "descripcion": "curso js",
+      "precio": 123,
+      "duracion": "2 meses",
+      "id": 1
+    },
+    {
+      "nombre": "php",
+      "descripcion": "curso php",
+      "precio": 32,
+      "duracion": "3 meses",
+      "id": 2
+    }
+  ],
+  "inscripciones": [
+    {
+      "id": 1,
+      "cursoId": 2,
+      "alumnoId": 1
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+<h1>Alumnos</h1>
+<div class="mb-5">
+  <button (click)="onCreateAlumno()" mat-flat-button color="primary" type="button">
+    <mat-icon>add</mat-icon>
+    Crear Alumno
+  </button>
+</div>
+<app-alumnos-table
+  [dataSource]="(alumnos | async) || []"
+  (deleteAlumno)="onDeleteAlumno($event)"
+  (editAlumno)="onEditAlumno($event)"
+></app-alumnos-table>

@@ -1,0 +1,29 @@
+<h1 mat-dialog-title>Inscripcion</h1>
+<div mat-dialog-content>
+  <form>
+    <mat-form-field class="w-full">
+      <mat-label>Curso</mat-label>
+      <mat-select [formControl]="cursoIdControl">
+        <mat-option [value]="curso.id"  *ngFor="let curso of  cursoOptions$ | async">
+          {{ curso.nombre }} - {{ curso.precio | currency }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="w-full">
+      <mat-label>Alumno</mat-label>
+      <mat-select [formControl]="alumnoIdControl" >
+        <mat-option [value]="alumno.id"  *ngFor="let alumno of  AlumnoOptions$ | async">
+          {{ alumno.nombre + ' ' + alumno.apellido }}
+        </mat-option>
+
+      </mat-select>
+    </mat-form-field>
+
+  </form>
+
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close>Cancelar</button>
+  <button (click)="onSubmit()" type="submit" mat-button>Guardar</button>
+</div>
